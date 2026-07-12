@@ -1,0 +1,73 @@
+<section id="experience">
+  <div class="container">
+    <p class="section-label">Experience</p>
+    <h2 class="section-title">Where I've <span>Made Impact</span></h2>
+
+    <div class="exp-layout">
+      <!-- Tabs -->
+      <div class="exp-tabs">
+        <button *ngFor="let exp of experiences; let i = index"
+                [class.active]="activeIndex === i"
+                (click)="activeIndex = i"
+                class="exp-tab">
+          <span class="tab-company">{{ exp.company }}</span>
+          <span class="tab-role">{{ exp.role }}</span>
+          <span class="tab-period">{{ exp.period }}</span>
+        </button>
+      </div>
+
+      <!-- Detail panel -->
+      <div class="exp-panel">
+        <div class="panel-header">
+          <div>
+            <h3 class="panel-role">{{ experiences[activeIndex].role }}</h3>
+            <p class="panel-company">
+              {{ experiences[activeIndex].company }}
+              <span *ngIf="experiences[activeIndex].current" class="current-badge">Current</span>
+            </p>
+          </div>
+          <div class="panel-meta">
+            <span><i class="fas fa-calendar-alt"></i> {{ experiences[activeIndex].period }}</span>
+            <span><i class="fas fa-map-marker-alt"></i> {{ experiences[activeIndex].location }}</span>
+          </div>
+        </div>
+
+        <ul class="panel-points">
+          <li *ngFor="let point of experiences[activeIndex].points">
+            <span class="bullet"><i class="fas fa-chevron-right"></i></span>
+            {{ point }}
+          </li>
+        </ul>
+
+        <div class="panel-tags">
+          <span *ngFor="let tag of experiences[activeIndex].tags" class="tag">{{ tag }}</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Education & Certs row -->
+    <div class="edu-row">
+      <div class="edu-section">
+        <h3 class="sub-heading"><i class="fas fa-graduation-cap"></i> Education</h3>
+        <div class="edu-cards">
+          <div *ngFor="let edu of education" class="edu-card">
+            <div class="edu-degree">{{ edu.degree }}</div>
+            <div class="edu-institution">{{ edu.institution }}</div>
+            <div class="edu-meta">{{ edu.period }} · {{ edu.location }}</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="edu-section">
+        <h3 class="sub-heading"><i class="fas fa-certificate"></i> Certifications</h3>
+        <div class="edu-cards">
+          <div *ngFor="let cert of certifications" class="edu-card">
+            <div class="edu-degree">{{ cert.name }}</div>
+            <div class="edu-institution">{{ cert.issuer }}</div>
+            <div class="edu-meta">{{ cert.period }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

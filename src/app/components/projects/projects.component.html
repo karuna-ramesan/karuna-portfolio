@@ -1,0 +1,35 @@
+<section id="projects">
+  <div class="container">
+    <p class="section-label">Projects</p>
+    <h2 class="section-title">Systems I've <span>Built</span></h2>
+
+    <div class="projects-grid">
+      <div *ngFor="let project of projects; let i = index" class="project-card"
+           [style.--accent]="project.accent">
+        <div class="card-top">
+          <div class="project-icon" [style.background]="project.accent + '15'" [style.color]="project.accent">
+            <i [class]="project.icon"></i>
+          </div>
+          <div class="project-num">0{{ i + 1 }}</div>
+        </div>
+
+        <div class="project-category">{{ project.category }}</div>
+        <h3 class="project-title">{{ project.title }}</h3>
+        <p class="project-desc">{{ project.description }}</p>
+
+        <ul class="project-highlights">
+          <li *ngFor="let h of project.highlights">
+            <i class="fas fa-check"></i>
+            {{ h }}
+          </li>
+        </ul>
+
+        <div class="project-tags">
+          <span *ngFor="let tag of project.tags" class="ptag">{{ tag }}</span>
+        </div>
+
+        <div class="card-glow"></div>
+      </div>
+    </div>
+  </div>
+</section>

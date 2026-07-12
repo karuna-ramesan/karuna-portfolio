@@ -1,0 +1,94 @@
+<section id="hero">
+  <!-- Background orbs -->
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="grid-lines"></div>
+
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="greeting">
+          <span class="dot"></span>
+          Available for opportunities
+        </div>
+
+        <h1 class="hero-name">
+          Karuna<br>
+          <span class="name-accent">R</span>
+        </h1>
+
+        <div class="hero-title">
+          <span class="title-text">{{ currentTitle }}</span><span class="cursor">|</span>
+        </div>
+
+        <p class="hero-bio">
+          Full Stack Developer with <strong>2+ years</strong> of experience crafting secure, 
+          scalable web applications. Specialized in Angular & .NET Core for the 
+          financial services industry — building systems that handle real money, real risk.
+        </p>
+
+        <div class="hero-actions">
+          <button class="btn-primary" (click)="scrollTo('#projects')">
+            View My Work
+            <i class="fas fa-arrow-right"></i>
+          </button>
+          <button class="btn-secondary" (click)="scrollTo('#contact')">
+            Let's Talk
+          </button>
+        </div>
+
+        <div class="hero-socials">
+          <a *ngFor="let s of socials" [href]="s.url" target="_blank" [attr.aria-label]="s.label" class="social-icon">
+            <i [class]="s.icon"></i>
+          </a>
+          <div class="social-line"></div>
+          <span class="social-label">Connect</span>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="photo-wrapper">
+          <div class="photo-ring ring-1"></div>
+          <div class="photo-ring ring-2"></div>
+          <div class="photo-container">
+            <img src="assets/profile.jpg" alt="Karuna R" class="profile-photo"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+            <div class="photo-placeholder">
+              <i class="fas fa-user"></i>
+            </div>
+          </div>
+          <div class="badge badge-exp">
+            <span class="badge-num">2+</span>
+            <span class="badge-text">Years Exp.</span>
+          </div>
+          <div class="badge badge-tech">
+            <i class="fab fa-angular"></i>
+            <span>.NET Core</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num">4+</span>
+        <span class="stat-label">Major Projects</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">2+</span>
+        <span class="stat-label">Years Experience</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">10+</span>
+        <span class="stat-label">Technologies</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">NBFC</span>
+        <span class="stat-label">Domain Expert</span>
+      </div>
+    </div>
+  </div>
+</section>

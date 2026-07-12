@@ -1,0 +1,53 @@
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-image-col">
+        <div class="about-img-wrap">
+          <img src="assets/profile.jpg" alt="Karuna R"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+          <div class="img-fallback"><i class="fas fa-user"></i></div>
+          <div class="img-border"></div>
+          <div class="img-dot dot-tl"></div>
+          <div class="img-dot dot-br"></div>
+        </div>
+      </div>
+
+      <div class="about-text-col">
+        <p class="section-label">About Me</p>
+        <h2 class="section-title">Building systems that<br><span>handle real complexity</span></h2>
+
+        <p class="about-para">
+          I'm a Full Stack Developer based in <strong>Palakkad, India</strong>, with 2+ years of 
+          hands-on experience delivering enterprise-grade web applications in the financial services sector.
+        </p>
+        <p class="about-para">
+          At <strong>Manappuram Finance Ltd.</strong>, I architected and built mission-critical modules 
+          — from loan audit workflows and risk monitoring systems to portfolio transfer platforms —
+          where accuracy, security, and performance aren't optional. Every line of code carries weight.
+        </p>
+        <p class="about-para">
+          My stack of choice is <strong>Angular + .NET Core</strong>, backed by deep SQL and PL/SQL 
+          expertise. I thrive in Agile environments, collaborating with analysts, QA, and architects 
+          to turn complex business requirements into clean, maintainable solutions.
+        </p>
+
+        <div class="highlights-grid">
+          <div *ngFor="let h of highlights" class="highlight-card">
+            <i [class]="h.icon"></i>
+            <div>
+              <span class="h-label">{{ h.label }}</span>
+              <span class="h-value">{{ h.value }}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-actions">
+          <a href="assets/Karuna_R_Resume.pdf" download class="btn-download">
+            <i class="fas fa-download"></i>
+            Download Resume
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

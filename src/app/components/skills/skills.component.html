@@ -1,0 +1,29 @@
+<section id="skills">
+  <div class="container">
+    <p class="section-label">Technical Skills</p>
+    <h2 class="section-title">My <span>Tech Arsenal</span></h2>
+
+    <div class="skills-grid">
+      <div *ngFor="let group of skillGroups" class="skill-card">
+        <div class="card-header">
+          <div class="card-icon" [style.background]="group.color + '15'" [style.color]="group.color">
+            <i [class]="group.icon"></i>
+          </div>
+          <h3 class="card-title" [style.color]="group.color">{{ group.category }}</h3>
+        </div>
+
+        <div class="skill-bars">
+          <div *ngFor="let skill of group.skills" class="skill-item">
+            <div class="skill-meta">
+              <span class="skill-name">{{ skill.name }}</span>
+              <span class="skill-pct" [style.color]="group.color">{{ skill.level }}%</span>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" [style.width]="skill.level + '%'" [style.background]="group.color"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,22 @@
+<nav [class.scrolled]="scrolled">
+  <div class="nav-inner">
+    <a class="logo" (click)="scrollTo('#hero')">
+      <span class="logo-bracket">&lt;</span>KR<span class="logo-bracket">/&gt;</span>
+    </a>
+
+    <ul class="nav-links" [class.open]="menuOpen">
+      <li *ngFor="let link of navLinks">
+        <a (click)="scrollTo(link.href)">{{ link.label }}</a>
+      </li>
+      <li>
+        <a href="assets/Karuna_R_Resume.pdf" download class="btn-resume">Resume</a>
+      </li>
+    </ul>
+
+    <button class="hamburger" (click)="toggleMenu()" [class.active]="menuOpen" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</nav>

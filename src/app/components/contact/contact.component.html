@@ -1,0 +1,69 @@
+<section id="contact">
+  <div class="container">
+    <p class="section-label">Contact</p>
+    <h2 class="section-title">Let's <span>Work Together</span></h2>
+
+    <div class="contact-layout">
+      <div class="contact-left">
+        <p class="contact-intro">
+          I'm currently open to new opportunities — whether it's a full-time role, 
+          freelance project, or just a technical conversation. Based in 
+          <strong>Palakkad, India</strong>, available for on-site or remote work.
+        </p>
+
+        <div class="contact-cards">
+          <a *ngFor="let info of contactInfo" [href]="info.href" target="_blank" class="contact-card">
+            <div class="contact-icon" [style.background]="info.accent + '15'" [style.color]="info.accent">
+              <i [class]="info.icon"></i>
+            </div>
+            <div>
+              <span class="contact-label">{{ info.label }}</span>
+              <span class="contact-value">{{ info.value }}</span>
+            </div>
+            <i class="fas fa-arrow-up-right contact-arrow"></i>
+          </a>
+        </div>
+
+        <div class="social-connect">
+          <p class="social-connect-title">Follow me</p>
+          <div class="social-links">
+            <a *ngFor="let s of socials" [href]="s.url" target="_blank" 
+               class="social-btn" [style.--s-color]="s.color"
+               [attr.aria-label]="s.label">
+              <i [class]="s.icon"></i>
+              <span>{{ s.label }}</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-right">
+        <div class="availability-card">
+          <div class="avail-pulse">
+            <span class="pulse-dot"></span>
+            <span class="pulse-ring"></span>
+          </div>
+          <h3>Available Now</h3>
+          <p>Open to Full Stack Developer roles in India or remote positions in the fintech/NBFC space.</p>
+
+          <div class="avail-tags">
+            <span>Full-time</span>
+            <span>Remote</span>
+            <span>India-based</span>
+            <span>Angular + .NET</span>
+          </div>
+
+          <a href="mailto:karunaramesh1213@gmail.com" class="cta-btn">
+            <i class="fas fa-paper-plane"></i>
+            Send me an email
+          </a>
+
+          <a href="https://wa.me/918111892907" target="_blank" class="cta-btn cta-wa">
+            <i class="fab fa-whatsapp"></i>
+            Message on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
