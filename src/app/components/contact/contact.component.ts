@@ -35,6 +35,6 @@ export class ContactComponent {
 
   socials = [
     { icon: 'fab fa-linkedin', url: 'https://www.linkedin.com/in/karuna-r', label: 'LinkedIn', color: '#0A66C2' },
-    { icon: 'fab fa-github', url: 'https://github.com', label: 'GitHub', color: '#ffffff' },
+    { icon: 'fab fa-github', url: 'https://github.com/karuna-ramesan', label: 'GitHub', color: '#ffffff' },
   ];
 }
