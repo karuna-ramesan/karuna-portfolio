@@ -13,22 +13,22 @@ export class ContactComponent {
     {
       icon: 'fas fa-envelope',
       label: 'Email',
-      value: 'karunaramesh1213@gmail.com',
-      href: 'mailto:karunaramesh1213@gmail.com',
+      value: 'karunaramesan@gmail.com',
+      href: 'mailto:karunaramesan@gmail.com',
       accent: '#00d4ff'
     },
     {
       icon: 'fab fa-whatsapp',
       label: 'WhatsApp',
-      value: '+91 81118 92907',
-      href: 'https://wa.me/918111892907',
+      value: '+971 589202819',
+      href: 'https://wa.me/971589202819',
       accent: '#25D366'
     },
     {
       icon: 'fas fa-map-marker-alt',
       label: 'Location',
-      value: 'Palakkad, India',
-      href: 'https://maps.google.com/?q=Palakkad,India',
+      value: 'Dubai, UAE',
+      href: 'https://maps.google.com/?q=Dubai,UAE',
       accent: '#ff6b6b'
     }
   ];

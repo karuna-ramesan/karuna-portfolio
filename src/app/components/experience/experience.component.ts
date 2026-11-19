@@ -28,6 +28,20 @@ export class ExperienceComponent {
         'Participated in Agile sprints, conducted code reviews, resolved production bugs, and enhanced application performance and stability.',
       ],
       tags: ['Angular', '.NET Core', 'PL/SQL', 'SQL Server', 'Agile']
+    },
+    {
+      role: 'Frontend Developer Intern',
+      company: 'SLR Shop',
+      type: 'React',
+      period: 'Apr 2023 – Jan 2023',
+      location: 'Thrissur, Kerala, India',
+      current: false,
+      points: [
+        'Designed and developed the e-commerce website for SLR Shop, a startup, using React to enable seamless online product browsing and purchasing.',
+        'Built responsive UI components and product listing pages, ensuring a smooth user experience across all devices.',
+        'Collaborated with the founding team to translate business needs into a functional, user-friendly storefront.',
+      ],
+      tags: ['React', 'JavaScript', 'CSS', 'Responsive Design']
     }
   ];
 

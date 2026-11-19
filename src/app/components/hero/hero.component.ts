@@ -18,8 +18,8 @@ export class HeroComponent implements OnInit, OnDestroy {
 
   socials = [
     { icon: 'fab fa-linkedin', url: 'https://www.linkedin.com/in/karuna-r', label: 'LinkedIn' },
-    { icon: 'fab fa-whatsapp', url: 'https://wa.me/918111892907', label: 'WhatsApp' },
-    { icon: 'fas fa-envelope', url: 'mailto:karunaramesh1213@gmail.com', label: 'Email' },
+    { icon: 'fab fa-whatsapp', url: 'https://wa.me/971589202819', label: 'WhatsApp' },
+    { icon: 'fas fa-envelope', url: 'mailto:karunaramesan@gmail.com', label: 'Email' },
   ];
 
   ngOnInit() {
